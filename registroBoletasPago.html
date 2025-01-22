@@ -67,55 +67,51 @@
     <div class="container" >
         <div class="row justify-content-center">
           <div class="toptitle" class="col-md-8">
-            <h2>Editor de datos de Contratos</h2>    
+            <h2>Registro de Boletas de Pago</h2>    
             <form class="topform">
               <div class="row g-3">
                   <div class="col-md-4">
-                      <label for="idContrato" class="form-label"><i class="fa-solid fa-bars"></i> ID:</label>
-                      <input type="text" class="form-control" id="idContrato" value="C001" name="idContrato" required>
+                      <label for="idBoleta" class="form-label"><i class="fa-solid fa-bars"></i> ID:</label>
+                      <input type="text" class="form-control" id="idBoleta"  name="idboleta" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="FI" class="form-label"><i class="fa-regular fa-calendar-days"></i> F.I.: </label>
-                      <input type="date" class="form-control" id="mydate" velue="2024/01/12" name="FI" required>
+                    <label for="cussp" class="form-label"><i class="fa-solid fa-barcode"></i> CUSSP: </label>
+                    <input type="text" class="form-control" id="cussp"  name="cussp" required>
+                </div>
+                <div class="col-md-4">
+                      <label for="Fechain" class="form-label"><i class="fa-regular fa-calendar-days"></i> Fecha de Ingreso: </label>
+                      <input type="date" class="form-control" id="datepicker"  name="Fechain" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="FF" class="form-label"><i class="fa-regular fa-calendar-days"></i> F.F.: </label>
-                      <input type="date" class="form-control" id="datepicker" velue="01/12/2024" name="FF" required>
+                      <label for="afp" class="form-label"><i class="fa-solid fa-building"></i> AFP: </label>
+                      <input type="text" class="form-control" id="afp"  name="afp" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="Nem" class="form-label"><i class="fa-solid fa-building"></i> Nombre del Empleador: </label>
-                      <input type="text" class="form-control" id="Nem" value="Fruit Peru" name="Nem" required>
+                      <label for="basico" class="form-label"><i class="fa-solid fa-money-bill"></i> Sueldo Básico: </label>
+                      <input type="text" class="form-control" id="basico" name="basico" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="Nom" class="form-label"><i class="fa-solid fa-user"></i> Nombre del Empleado: </label>
-                      <input type="text" class="form-control" id="Nom" value="Socorro" name="Nom" required>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="cargo" class="form-label"><i class="fa-solid fa-briefcase"></i> Cargo: </label>
-                    <input type="text" class="form-control" id="cargo" value="Jefe de RR.HH." name="cargo" required>
+                    <label for="ht" class="form-label"><i class="fa-solid fa-clock"></i> Horas Trabajadas: </label>
+                    <input type="text" class="form-control" id="ht"  required>
                 </div>
                 <div class="col-md-4"> 
-                    <label for="remu" class="form-label"><i class="fa-solid fa-money-check-dollar"></i> Remuneración: </label>
-                    <input type="text" class="form-control" id="remu" value="S/5000" name="remu" required>
+                    <label for="dt" class="form-label"><i class="fa-solid fa-calendar-week"></i> Días Trabajados: </label>
+                    <input type="text" class="form-control" id="dt" required>
                 </div>
                 <div class="col-md-4">
-                    <label for="ht" class="form-label"><i class="fa-solid fa-business-time"></i> Horas Trabajo: </label>
-                    <input type="text" class="form-control" id="ht" value="8" name="ht" required>
+                    <label for="dsc" class="form-label"><i class="fa-solid fa-circle-dollar-to-slot"></i> Descuento: </label>
+                    <input type="text" class="form-control" id="dsc" required>
                 </div>
                 <div class="col-md-4">
-                  <label for="tipoc" class="form-label"><i class="fa-solid fa-file-contract"></i> Tipo de contrato: </label>
-                  <input type="text" class="form-control" id="tipoc" value="Indefinido" name="tipoc" required>
-                </div>
-                <div class="col-md-4">
-                    <label for="dni" class="form-label"><i class="fa-solid fa-id-card"></i> DNI: </label>
-                    <input type="text" class="form-control" id="dni" value="12345678" name="dni" required>
+                  <label for="pagot" class="form-label"><i class="fa-solid fa-sack-dollar"></i> Pago Total: </label>
+                  <input type="text" class="form-control" id="pagot" name="pagot" required>
                 </div>
                 <div class="col-md-4"> 
                     <label for="idTrabajador" class="form-label"><i class="fa-solid fa-fingerprint"></i> ID Trabajador: </label>
-                    <input type="text" class="form-control" id="idTrabajador" value="J001" name="idTrabajador" required>
+                    <input type="text" class="form-control" id="idt"  name="idTrabajador" required>
                 </div>
                  <div class="col-12">
-                      <button type="submit" class="btn btn-success">Actualizar</button>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
                       <button type="submit" class="btn btn-danger">Cancelar</button>
                   </div>
               </div>

@@ -67,55 +67,55 @@
     <div class="container" >
         <div class="row justify-content-center">
           <div class="toptitle" class="col-md-8">
-            <h2>Editor de datos de Contratos</h2>    
+            <h2>Registro de Contratos</h2>    
             <form class="topform">
               <div class="row g-3">
                   <div class="col-md-4">
                       <label for="idContrato" class="form-label"><i class="fa-solid fa-bars"></i> ID:</label>
-                      <input type="text" class="form-control" id="idContrato" value="C001" name="idContrato" required>
+                      <input type="text" class="form-control" id="idContrato" name="idContrato" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="FI" class="form-label"><i class="fa-regular fa-calendar-days"></i> F.I.: </label>
-                      <input type="date" class="form-control" id="mydate" velue="2024/01/12" name="FI" required>
+                      <label for="FI" class="form-label"><i class="fa-regular fa-calendar-days"></i> F.I: </label>
+                      <input type="date" class="form-control" id="mydate"  name="FI" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="FF" class="form-label"><i class="fa-regular fa-calendar-days"></i> F.F.: </label>
-                      <input type="date" class="form-control" id="datepicker" velue="01/12/2024" name="FF" required>
+                      <label for="FF" class="form-label"><i class="fa-regular fa-calendar-days"></i> F.F: </label>
+                      <input type="date" class="form-control" id="datepicker"  name="FF" required>
                   </div>
                   <div class="col-md-4">
                       <label for="Nem" class="form-label"><i class="fa-solid fa-building"></i> Nombre del Empleador: </label>
-                      <input type="text" class="form-control" id="Nem" value="Fruit Peru" name="Nem" required>
+                      <input type="text" class="form-control" id="Nem"  name="Nem" required>
                   </div>
                   <div class="col-md-4">
                       <label for="Nom" class="form-label"><i class="fa-solid fa-user"></i> Nombre del Empleado: </label>
-                      <input type="text" class="form-control" id="Nom" value="Socorro" name="Nom" required>
+                      <input type="text" class="form-control" id="Nom"  name="Nom" required>
                   </div>
                   <div class="col-md-4">
                     <label for="cargo" class="form-label"><i class="fa-solid fa-briefcase"></i> Cargo: </label>
-                    <input type="text" class="form-control" id="cargo" value="Jefe de RR.HH." name="cargo" required>
+                    <input type="text" class="form-control" id="cargo"  name="cargo" required>
                 </div>
                 <div class="col-md-4"> 
                     <label for="remu" class="form-label"><i class="fa-solid fa-money-check-dollar"></i> Remuneración: </label>
-                    <input type="text" class="form-control" id="remu" value="S/5000" name="remu" required>
+                    <input type="text" class="form-control" id="remu"  name="remu" required>
                 </div>
                 <div class="col-md-4">
                     <label for="ht" class="form-label"><i class="fa-solid fa-business-time"></i> Horas Trabajo: </label>
-                    <input type="text" class="form-control" id="ht" value="8" name="ht" required>
+                    <input type="text" class="form-control" id="ht"  name="ht" required>
                 </div>
                 <div class="col-md-4">
                   <label for="tipoc" class="form-label"><i class="fa-solid fa-file-contract"></i> Tipo de contrato: </label>
-                  <input type="text" class="form-control" id="tipoc" value="Indefinido" name="tipoc" required>
+                  <input type="text" class="form-control" id="tipoc"  name="tipoc" required>
                 </div>
                 <div class="col-md-4">
                     <label for="dni" class="form-label"><i class="fa-solid fa-id-card"></i> DNI: </label>
-                    <input type="text" class="form-control" id="dni" value="12345678" name="dni" required>
+                    <input type="text" class="form-control" id="dni"  name="dni" required>
                 </div>
                 <div class="col-md-4"> 
                     <label for="idTrabajador" class="form-label"><i class="fa-solid fa-fingerprint"></i> ID Trabajador: </label>
-                    <input type="text" class="form-control" id="idTrabajador" value="J001" name="idTrabajador" required>
+                    <input type="text" class="form-control" id="idTrabajador"  name="idTranajador" required>
                 </div>
                  <div class="col-12">
-                      <button type="submit" class="btn btn-success">Actualizar</button>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
                       <button type="submit" class="btn btn-danger">Cancelar</button>
                   </div>
               </div>
@@ -123,18 +123,18 @@
           </div>
       </div>
   </div>
-  <script>
+    <script>
     $(document).ready(function() {
       var today = new Date().toISOString().split('T')[0];
       $('#myDate').val(today);
       $('#myDate').datepicker();
     });
-  </script>
+    </script>
     <script src="https://kit.fontawesome.com/492992820a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 </body>
 </html>
