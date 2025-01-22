@@ -9,6 +9,12 @@ body {
     justify-content: center;
 }
 
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card {
     padding: 20px;
     border-radius: 10px;
@@ -24,4 +30,30 @@ body {
 img {
     width: 25%;
     height: 25%;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-iniciar {
+    width: 55%;
+}
+
+.btn-regresar {
+    width: 30%;
+}
+
+p {
+    text-align: center;
+}
+
+.img-equipo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
