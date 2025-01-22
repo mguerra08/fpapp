@@ -1,0 +1,175 @@
+body {
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+section {
+    background-color: #FFF4E8;
+}
+
+.banner-contactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px !important;
+    margin-bottom: 15px !important;
+}
+
+.banner-contactanos h1, .banner-contactanos p {
+    color: #F58634;
+}
+
+.banner-contactanos h1 {
+    margin-bottom: 20px !important;
+    text-shadow: 2px 2px 5px rgba(240, 91, 4, 0.5);
+    font-weight: bold;
+}
+
+.banner-contactanos p {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(240, 91, 4, 0.5);
+    font-size: 20px;
+}
+
+.cont-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    background-color: #CAC6C6;
+    padding: 35px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px !important;
+    color: #335535 !important;
+}
+
+form label {
+    color: #335535 !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+}
+
+form input, form textarea {
+    padding: 15px !important;
+    border-radius: 5px !important;
+    background-color: #FFFFFF !important;
+    border: 2px solid #F0FAF1 !important;
+    color: #2b7930 !important;
+    width: 100% !important;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #b5cab6 !important;
+    font-size: 15px !important;
+}
+
+.btn.btn-primary {
+    background-color: #F58634 !important;
+    border: none;
+}
+
+.btn.btn-primary:hover {
+    background-color: rgb(255, 174, 0) !important;
+    border: none;
+}
+
+.logo-FP {
+    margin-bottom: 40px;
+}
+
+.logo-FP img {
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0.5;
+    max-width: 400px;
+}
+
+.text {
+    color:#2b7930;
+    margin-bottom: 20px;
+}
+
+.logo-mapa {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-mapa img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.imagen-1,.imagen-2 {
+    position: absolute;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+}
+  
+.imagen-1 {
+    opacity: 1;
+    animation: fade-out 15s infinite;
+}
+  
+.imagen-2 {
+    opacity: 0;
+    animation: fade-in 15s infinite;
+}
+  
+@keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+.logos-redes i {
+    padding: 0 25px;
+    font-size: 40px;
+    color: black;
+}
+
+footer {
+    background-color: #59861F;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
