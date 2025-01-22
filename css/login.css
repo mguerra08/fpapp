@@ -67,5 +67,5 @@ p {
 }
 
 .img-equipo:hover img {
-    box-shadow: 0 0 10px 5px rgb(98, 0, 255); /* Efecto de box-shadow en hover */
+    box-shadow: 0 0 10px 5px rgb(98, 0, 255);
 }
