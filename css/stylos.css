@@ -76,7 +76,7 @@ body {
     font-weight: 500;
 }
 
-.car{
+.intranet{
     background-color: #c7d3ce;
     color: #3c5e10;
     border: none;
@@ -86,7 +86,7 @@ body {
     transition: 0.3s ease;
 }
 
-.car:hover {
+.intranet:hover {
     background-color: #d5f0b2;
 }
 
