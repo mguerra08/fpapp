@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./css/stylos.css">
     <style>
@@ -66,43 +67,50 @@
     <div class="container" >
         <div class="row justify-content-center">
           <div class="toptitle" class="col-md-8">
-            <h2>Registro de trabajador</h2>    
+            <h2>Registro de Boletas de Pago</h2>    
             <form class="topform">
               <div class="row g-3">
                   <div class="col-md-4">
-                      <label for="idTrabajador" class="form-label"><i class="fa-solid fa-fingerprint"></i> ID:</label>
-                      <input type="text" class="form-control" id="idTrabajador"  name="idTrabajador" required>
+                      <label for="idBoleta" class="form-label"><i class="fa-solid fa-bars"></i> ID:</label>
+                      <input type="text" class="form-control" id="idBoleta"  name="idboleta" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="nombre" class="form-label"><i class="fa-solid fa-user"></i> Nombre: </label>
-                      <input type="text" class="form-control" id="nombre"  name="nombre" required>
-                  </div>
-                  <div class="col-md-4">
-                      <label for="apellido" class="form-label"><i class="fa-solid fa-user"></i> Apellido: </label>
-                      <input type="text" class="form-control" id="apellido" name="apellido" required>
-                  </div>
-                  <div class="col-md-4">
-                      <label for="dni" class="form-label"><i class="fa-solid fa-id-card"></i> DNI: </label>
-                      <input type="text" class="form-control" id="dni"  name="dni" required>
-                  </div>
-                  <div class="col-md-4">
-                      <label for="cargo" class="form-label"><i class="fa-solid fa-briefcase"></i> Cargo: </label>
-                      <input type="text" class="form-control" id="cargo" name="cargo" required>
-                  </div>
-                  <div class="col-md-4">
-                    <label for="dpt" class="form-label"><i class="fa-solid fa-landmark"></i> Departamento: </label>
-                    <input type="text" class="form-control" id="dpto" name="dpto" required>
-                </div>
-                <div class="col-md-4"> 
-                    <label for="correo" class="form-label"><i class="fa-solid fa-envelope"></i> Correo: </label>
-                    <input type="email" class="form-control" id="correo"  name="correo" required>
+                    <label for="cussp" class="form-label"><i class="fa-solid fa-barcode"></i> CUSSP: </label>
+                    <input type="text" class="form-control" id="cussp"  name="cussp" required>
                 </div>
                 <div class="col-md-4">
-                    <label for="regimen" class="form-label"><i class="fa-solid fa-layer-group"></i> Régimen: </label>
-                    <input type="text" class="form-control" id="regimen"  name="regimen" required>
+                      <label for="Fechain" class="form-label"><i class="fa-regular fa-calendar-days"></i> Fecha de Ingreso: </label>
+                      <input type="date" class="form-control" id="datepicker"  name="Fechain" required>
+                  </div>
+                  <div class="col-md-4">
+                      <label for="afp" class="form-label"><i class="fa-solid fa-building"></i> AFP: </label>
+                      <input type="text" class="form-control" id="afp"  name="afp" required>
+                  </div>
+                  <div class="col-md-4">
+                      <label for="basico" class="form-label"><i class="fa-solid fa-money-bill"></i> Sueldo Básico: </label>
+                      <input type="text" class="form-control" id="basico" name="basico" required>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="ht" class="form-label"><i class="fa-solid fa-clock"></i> Horas Trabajadas: </label>
+                    <input type="text" class="form-control" id="ht"  required>
                 </div>
-
-                  <div class="col-12">
+                <div class="col-md-4"> 
+                    <label for="dt" class="form-label"><i class="fa-solid fa-calendar-week"></i> Días Trabajados: </label>
+                    <input type="text" class="form-control" id="dt" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="dsc" class="form-label"><i class="fa-solid fa-circle-dollar-to-slot"></i> Descuento: </label>
+                    <input type="text" class="form-control" id="dsc" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="pagot" class="form-label"><i class="fa-solid fa-sack-dollar"></i> Pago Total: </label>
+                  <input type="text" class="form-control" id="pagot" name="pagot" required>
+                </div>
+                <div class="col-md-4"> 
+                    <label for="idTrabajador" class="form-label"><i class="fa-solid fa-fingerprint"></i> ID Trabajador: </label>
+                    <input type="idTrabajador" class="form-control" id="idt"  name="idTrabajador" required>
+                </div>
+                 <div class="col-12">
                       <button type="submit" class="btn btn-primary">Guardar</button>
                       <button type="submit" class="btn btn-danger">Cancelar</button>
                   </div>
@@ -111,11 +119,18 @@
           </div>
       </div>
   </div>
-
+  <script>
+    $(document).ready(function() {
+      var today = new Date().toISOString().split('T')[0];
+      $('#myDate').val(today);
+      $('#myDate').datepicker();
+    });
+  </script>
     <script src="https://kit.fontawesome.com/492992820a.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 </body>
 </html>
