@@ -1,0 +1,73 @@
+body {
+    background-color: #fff4e8;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.encabezado {
+    margin-bottom: 10px;
+}
+
+.encabezado h2 {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.encabezado h2, .encabezado p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reglas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btnEnviar button {
+    width: 100px;
+    font-weight: 600;
+}
+
+.btnCancelar{
+    width: 150px;
+    float: right;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.btnGuardar{
+    width: 150px;
+    float: left;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+
+button {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
