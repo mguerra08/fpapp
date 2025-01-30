@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Formulario de edición de datos de Contratos - Fuit Perú</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/stylos.css">
+    <style>
+      .toptitle {
+        padding: 20px 0 0 0;
+      }
+      .topform {
+        padding: 20px 0 0 0;
+      }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container logo">
+      <a class="navbar-brand" href="#"><img src="./img/Logo-FP.png" alt=""><span class="text-success"><strong>Fruit</strong></span> <span class="text-dark"><strong>Perú</strong></span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#"><b><em>Inicio</em></b></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b><em>RR.HH.</em></b>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Trabajadores</a>
+            <a class="dropdown-item" href="#">Contratos</a>
+            <a class="dropdown-item" href="#">Asistencias</a>
+            <a class="dropdown-item" href="#">Boletas de pago</a>
+            <a class="dropdown-item" href="#">Reportes</a>
+            <a class="dropdown-item" href="#">Médico</a>
+            <a class="dropdown-item" href="#">Licencia Médica</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <b><em>Producción</em></b>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Labores</a>
+            <a class="dropdown-item" href="#">Asignación de Labores</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link car" href="#"><i class="fa-solid fa-person-walking-arrow-right fa-bounce fa-xl"></i></a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+    <br><br>
+    <div class="container" >
+        <div class="row justify-content-center">
+          <div class="toptitle" class="col-md-8">
+            <h2><b>Registro de Licencias Médicas</b></h2>    
+            <form class="topform">
+              <div class="row g-3">
+                  <div class="col-md-4">
+                      <label for="idContrato" class="form-label"><i class="fa-solid fa-bars"></i> ID:</label>
+                      <input type="text" class="form-control" id="idContrato" name="idContrato" required>
+                  </div>
+                  <div class="col-md-4">
+                      <label for="FI" class="form-label"><i class="fa-regular fa-calendar-days"></i> Fecha: </label>
+                      <input type="date" class="form-control" id="mydate"  name="FI" required>
+                  </div>
+                  <div class="col-md-4">
+                      <label for="FF" class="form-label"><i class="fa-regular fa-calendar-days"></i> IDMédico: </label>
+                      <input type="text" class="form-control" id="datepicker"  name="FF" required>
+                  </div>
+                  <div class="col-md-4">
+                      <label for="Nem" class="form-label"><i class="fa-solid fa-building"></i> idTrabajador: </label>
+                      <input type="text" class="form-control" id="Nem"  name="Nem" required>
+                  </div>
+                 <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Guardar</button>
+                      <button type="submit" class="btn btn-danger">Cancelar</button>
+                  </div>
+              </div>
+          </form>
+          </div>
+      </div>
+  </div>
+    <script>
+    $(document).ready(function() {
+      var today = new Date().toISOString().split('T')[0];
+      $('#myDate').val(today);
+      $('#myDate').datepicker();
+    });
+    </script>
+    <script src="https://kit.fontawesome.com/492992820a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+</body>
+</html>
