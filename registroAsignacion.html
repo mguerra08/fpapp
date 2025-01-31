@@ -67,27 +67,31 @@
     <div class="container" >
         <div class="row justify-content-center">
           <div class="toptitle" class="col-md-8">
-            <h2><b>Editor de Licencias Médicas</b></h2>    
+            <h2><b>Registro de Labores</b></h2>    
             <form class="topform">
               <div class="row g-3">
                   <div class="col-md-4">
-                      <label for="idContrato" class="form-label"><i class="fa-solid fa-bars"></i> ID:</label>
-                      <input type="text" class="form-control" id="idContrato" value="LM001" name="idContrato" required>
+                      <label for="idContrato" class="form-label"><i class="fa-solid fa-bars"></i>ID:</label>
+                      <input type="text" class="form-control" id="idAsignacionLabores" name="idLabores" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="FI" class="form-label"><i class="fa-regular fa-calendar-days"></i> Fecha: </label>
-                      <input type="date" class="form-control" id="mydate"  value="2024-12-04" name="FI" required>
+                      <label for="FI" class="form-label"><i class="fa-regular fa-calendar-days"></i>Cantidad:</label>
+                      <input type="number" class="form-control" id="mydate"  name="FI" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="FF" class="form-label"><i class="fa-regular fa-calendar-days"></i> IDMédico: </label>
-                      <input type="text" class="form-control" id="datepicker"  value="M001" name="FF" required>
+                      <label for="FF" class="form-label"><i class="fa-regular fa-calendar-days"></i>Especialidad:</label>
+                      <input type="text" class="form-control" id="datepicker"  name="FF" required>
                   </div>
                   <div class="col-md-4">
-                      <label for="Nem" class="form-label"><i class="fa-solid fa-building"></i> idTrabajador: </label>
-                      <input type="text" class="form-control" id="Nem"  value="T009" name="Nem" required>
+                    <label for="dpt" class="form-label"><i class="fa-solid fa-landmark"></i>Código Trabajador: </label>
+                    <input type="text" class="form-control" id="dpto" name="dpto" required>
+                    </div>
+                  <div class="col-md-4"> 
+                    <label for="correo" class="form-label"><i class="fa-solid fa-envelope"></i>Código Labor: </label>
+                    <input type="text" class="form-control" id="correo"  name="correo" required>
                   </div>
-                 <div class="col-12">
-                      <button type="submit" class="btn btn-success">Actualizar</button>
+                  <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Guardar</button>
                       <button type="submit" class="btn btn-danger">Cancelar</button>
                   </div>
               </div>
