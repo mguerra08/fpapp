@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/boton.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css">
     
-    <title>Labores</title>
+    <title>Asignacion de Labores</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     
   </head>
@@ -61,7 +61,7 @@
         <br>
         <br>
             <center>
-                <H1><em><b>Labores</b></em></H1>
+                <H1><em><b>Asignación de Labores</b></em></H1>
             </center>
 
         
@@ -84,12 +84,12 @@
         <br>
         <div class="container">
         
-                    <table id="datos_Labores" class="table table-bordered table-striped display nowrap" width:"2600px">
+                    <table id="datos_AsignacionLabores" class="table table-bordered table-striped display nowrap" width:"2600px">
                     <thead class="table-dark text-center" >
                         <tr>
                             <th scope="col"><i class="fa-regular fa-id-badge fa-flip fa-xl" style="color: #917259;"></i>ID:</th>
-                            <th scope="col"><i class="fa-solid fa-signature fa-bounce fa-lg" style="color: #0a9492;"></i>Descripcion:</th>
-                            <th scope="col"><i class="fa-solid fa-file-signature fa-beat-fade fa-xl" style="color: #9b92b9;"></i> Duracion:</th>
+                            <th scope="col"><i class="fa-solid fa-signature fa-bounce fa-lg" style="color: #0a9492;"></i>Especialidad:</th>
+                            <th scope="col"><i class="fa-solid fa-file-signature fa-beat-fade fa-xl" style="color: #9b92b9;"></i>Cantidad:</th>
                             <th scope="col"><i class="fa-solid fa-shapes fa-bounce" style="color: #0981aa;"></i> Acción:</th>
                             
                         </tr>
@@ -147,7 +147,7 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            var table = $('#datos_Labores').DataTable({
+            var table = $('#datos_AsignacionLabores').DataTable({
                 responsive:true,
                 dom: 'Bfrtip',
                 buttons:{
