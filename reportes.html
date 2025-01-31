@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/boton.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css">
     
-    <title>Contratos</title>
+    <title>Trabajador</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     
   </head>
@@ -36,7 +36,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#"><b><em> Inicio</em></b></a>
+                <a class="nav-link" href="Intranet.html"><b><em> Inicio</em></b></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><b><em> RRHH</em></b></a>
@@ -61,7 +61,7 @@
         <br>
         <br>
             <center>
-                <H1><em><b>Contratos</b></em></H1>
+                <h1><em><b> Reportes</b></em></h1>
             </center>
 
         
@@ -69,7 +69,7 @@
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             
                 
-                    <a href="#" class="btn btn-primary w-40"><i class="fa-solid fa-industry fa-beat"></i><b> Nuevo</b></a>
+                    <a href="registroReportes.html" class="btn btn-primary w-40"><i class="fa-solid fa-industry fa-beat"></i><b> Nuevo</b></a>
                 
            
                     
@@ -84,20 +84,17 @@
         <br>
         <div class="container">
         
-                    <table id="datos_contrato" class="table table-bordered table-striped display nowrap" width:"2600px">
+                    <table id="datos_reportes" class="table table-bordered table-striped display nowrap" width:"2600px">
                     <thead class="table-dark text-center" >
                         <tr>
                             <th scope="col"><i class="fa-regular fa-id-badge fa-flip fa-xl" style="color: #917259;"></i> ID</th>
-                            <th scope="col"><i class="fa-solid fa-signature fa-bounce fa-lg" style="color: #0a9492;"></i> Fecha Ingreso:</th>
-                            <th scope="col"><i class="fa-solid fa-file-signature fa-beat-fade fa-xl" style="color: #9b92b9;"></i> Término Contrato:</th>
-                            <th scope="col"><i class="fa-regular fa-address-card fa-fade fa-xl" style="color: #318c61;"></i> Empleador:</th>
-                            <th scope="col"><i class="fa-solid fa-user-shield fa-shake fa-xl" style="color: #68ee20;"></i> Empleado:</th>
-                            <th scope="col"><i class="fa-solid fa-building-user fa-flip fa-xl" style="color: #37e1bf;"></i> Cargo:</th>
-                            <th scope="col"><i class="fa-regular fa-envelope fa-bounce fa-xl" style="color: #1f787a;"></i> Remuneración:</th>
-                            <th scope="col"><i class="fa-solid fa-users fa-shake fa-xl" style="color: #d10000;"></i> Horas Trabajadas:</th>
-                            <th scope="col"><i class="fa-solid fa-users fa-shake fa-xl" style="color: #d10000;"></i> Tipo Contrato:</th>
-                            <th scope="col"><i class="fa-solid fa-users fa-shake fa-xl" style="color: #d10000;"></i> DNI:</th>
-                            <th scope="col"><i class="fa-solid fa-users fa-shake fa-xl" style="color: #d10000;"></i> Código:</th>                               
+                            <th scope="col"><i class="fa-solid fa-signature fa-bounce fa-lg" style="color: #0a9492;"></i> Fecha:</th>
+                            <th scope="col"><i class="fa-solid fa-file-signature fa-beat-fade fa-xl" style="color: #9b92b9;"></i> Nombre:</th>
+                            <th scope="col"><i class="fa-regular fa-address-card fa-fade fa-xl" style="color: #318c61;"></i> Apellido:</th>
+                            <th scope="col"><i class="fa-solid fa-user-shield fa-shake fa-xl" style="color: #68ee20;"></i> DNI:</th>
+                            <th scope="col"><i class="fa-solid fa-building-user fa-flip fa-xl" style="color: #37e1bf;"></i> ID Asistencia:</th>
+                            <th scope="col"><i class="fa-regular fa-envelope fa-bounce fa-xl" style="color: #1f787a;"></i> Inasistencia:</th>
+                            <th scope="col"><i class="fa-solid fa-users fa-shake fa-xl" style="color: #d10000;"></i>Tardanza:</th>                            
                             <th scope="col"><i class="fa-solid fa-shapes fa-bounce" style="color: #0981aa;"></i> Acción:</th>
                             
                         </tr>
@@ -112,12 +109,9 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
                             <td></td>                           
                             <td>
-                                <a href="#" class="link-primary"><i class="fa-solid fa-pen-clip fa-beat-fade" 
+                                <a href="editTrabajador.html" class="link-primary"><i class="fa-solid fa-pen-clip fa-beat-fade" 
                                 style="color: #1f5122;"></i></a>
                                 <a href="#" class="link-warning"><i class="fa-sharp fa-solid fa-eye fa-bounce"></i></a>
                                 <a href="#" class="link-danger"><i class="fa-solid fa-trash-can fa-shake"></i></a>
@@ -164,7 +158,7 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            var table = $('#datos_contrato').DataTable({
+            var table = $('#datos_reportes').DataTable({
                 responsive:true,
                 dom: 'Bfrtip',
                 buttons:{
